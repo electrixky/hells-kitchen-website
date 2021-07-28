@@ -1,0 +1,23 @@
+.tab {
+	letter-spacing: 2px;
+	font-weight: 600;
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	width: 100%;
+	color: #fff;
+	background: rgb(0,0,0);
+
+	&:hover {
+		background-color: rgb(59, 54, 54);
+	}
+
+	&.active {
+		background-color: #ccc;
+	}
+}
+
+

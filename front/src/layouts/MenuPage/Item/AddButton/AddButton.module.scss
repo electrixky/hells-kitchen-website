@@ -1,0 +1,12 @@
+.button {
+	position: absolute;
+	right: 2rem;
+	top: 1.8rem;
+	font-size: 2rem;
+	color: #ffd900;
+
+	&:hover {
+		color: #FFFF00;
+		cursor: pointer;
+	}
+}

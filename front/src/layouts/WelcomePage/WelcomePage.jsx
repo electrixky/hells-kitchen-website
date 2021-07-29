@@ -3,7 +3,7 @@ import Logo from './Logo/Logo'
 import Navigation from './Navigation/Navigation'
 
 const WelcomePage = () => {
-	return <div className={styles.background}>
+	return <div className={styles.background} id='home'>
 		<Navigation />
 		<Logo />
 	</div>

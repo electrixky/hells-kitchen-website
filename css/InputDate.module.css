@@ -1,0 +1,20 @@
+.input {
+  text-align: center;
+  border: 1px solid grey;
+}
+
+.input:not(:last-child) {
+  margin: 0 2rem 0 0;
+}
+
+.input:hover {
+  cursor: pointer;
+}
+
+.cell {
+  padding: 1rem;
+}
+
+.cell:not(:last-child) {
+  border-bottom: 1px solid grey;
+}

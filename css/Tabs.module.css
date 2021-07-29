@@ -1,0 +1,10 @@
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  border-radius: 10px 10px 0 0;
+}

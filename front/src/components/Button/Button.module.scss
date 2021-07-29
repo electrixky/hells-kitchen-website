@@ -1,0 +1,18 @@
+.button {
+	border: none;
+	padding: 1rem 2rem;
+	margin: 0;
+	text-decoration: none;
+	font-size: 1.8rem;
+	line-height: 1;
+	cursor: pointer;
+	text-align: center;
+	transition: background 250ms ease-in-out, transform 150ms ease;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.buttonBlue {
+	background: #0033ff;
+	color: #ffffff;
+}

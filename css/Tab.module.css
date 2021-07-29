@@ -1,0 +1,22 @@
+.tab {
+  letter-spacing: 2px;
+  font-weight: 600;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  color: #fff;
+  background: black;
+}
+
+.tab:hover {
+  background-color: #3b3636;
+}
+
+.tab.active {
+  background-color: #ccc;
+}

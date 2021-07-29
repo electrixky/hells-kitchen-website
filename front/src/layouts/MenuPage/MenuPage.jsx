@@ -1,5 +1,5 @@
 import styles from './MenuPage.module.scss'
-import Title from '../../components/Title'
+import Title from '../../components/Title/Title'
 import Menu from './Menu/Menu'
 
 

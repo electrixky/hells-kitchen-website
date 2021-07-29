@@ -1,0 +1,13 @@
+.input {
+  text-align: center;
+  border: 1px solid grey;
+  padding: 1rem;
+}
+
+.input:not(:last-child) {
+  margin: 0 2rem 0 0;
+}
+
+.input:hover {
+  cursor: pointer;
+}

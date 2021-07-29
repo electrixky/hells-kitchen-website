@@ -7,7 +7,7 @@
 	line-height: 1;
 	cursor: pointer;
 	text-align: center;
-	transition: background 250ms ease-in-out, transform 150ms ease;
+	transition: all .2s;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
@@ -15,4 +15,19 @@
 .buttonBlue {
 	background: #0033ff;
 	color: #ffffff;
+
+	&:hover {
+		background: #2785ff;
+	}
+}
+
+.buttonPurple {
+	background: #c200c2;
+	color: #ffffff;
+	display: block;
+	margin: 7rem auto;
+
+	&:hover {
+		background: #e900e9;
+	}
 }

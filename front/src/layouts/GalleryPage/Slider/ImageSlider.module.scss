@@ -1,6 +1,15 @@
-.style {
-	padding-bottom: 5rem;
+.slider {
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image {
+	max-width: 80rem;
+	max-height: 40rem;
+	border-radius: 10px;
+	cursor: pointer;
 }
 
 .arrowLeft {
@@ -35,4 +44,15 @@
 	&:hover {
 		color: #ffb7ff;
 	}
+}
+
+.slide {
+	opacity: 0.5;
+	transition: all .5s ease;
+}
+
+.active {
+	opacity: 1;
+	transition: .5s;
+	transform: scale(1.02);
 }

@@ -7,7 +7,7 @@ import Button from '../../components/Button/Button'
 const GalleryPage = () => {
 	return <div id='gallery' className={styles.style}>
 		<Title style='titlePurple'>GALLERY</Title>
-		<div className={styles.style}>
+		<div>
 			<ImageSlider slides={SliderData} />
 			<Button style='buttonPurple'>VIEW FULL GALLERY</Button>
 		</div>

@@ -1,13 +1,14 @@
 import styles from './WelcomePage.module.scss'
 import Logo from './Logo/Logo'
 import Navigation from './Navigation/Navigation'
-import { IoIosArrowDown } from 'react-icons/io'
 
 const WelcomePage = () => {
 	return <div className={styles.background} id='home'>
 		<Navigation />
 		<Logo />
-		<IoIosArrowDown className={styles.arrow}/>
+		<a className={styles.arrow} href="#menu" >
+			<i class="fa fa-chevron-down" aria-hidden="true"></i>
+		</a>
 	</div>
 }
 

@@ -6,10 +6,32 @@
 }
 
 .arrow {
-	font-size: 15rem;
+	color: #fff;
+	font-size: 10rem;
 	user-select: none;
 	position: absolute;
-	bottom: 20px;
+	bottom: -10px;
+	left: 47%;
 	text-align: center;
-	opacity: 0.5;
+	opacity: 0.6;
+	background: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	animation-name: bounce;
+   animation-timing-function: ease;
+	transform-origin: bottom;
+	animation-duration: 1.5s;
+   animation-iteration-count: infinite;
+
+	&:hover {
+		opacity: .9;
+	}
 }
+
+@keyframes bounce {
+	0%   { transform: translateY(10px); }
+	50%  { transform: translateY(-20px); }
+	100% { transform: translateY(10px); }
+}
+

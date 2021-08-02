@@ -1,0 +1,33 @@
+.button {
+	border: none;
+	padding: 1rem 2rem;
+	margin: 0;
+	text-decoration: none;
+	font-size: 1.8rem;
+	line-height: 1;
+	cursor: pointer;
+	text-align: center;
+	transition: all .2s;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.buttonBlue {
+	background: #0033ff;
+	color: #ffffff;
+
+	&:hover {
+		background: #2785ff;
+	}
+}
+
+.buttonPurple {
+	background: #c200c2;
+	color: #ffffff;
+	display: block;
+	margin: 7rem auto;
+
+	&:hover {
+		background: #e900e9;
+	}
+}

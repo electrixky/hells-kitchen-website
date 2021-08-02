@@ -1,0 +1,26 @@
+.form {
+	font-size: 1.6rem;
+	padding: 3rem 5rem 2rem 2rem;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: space-around;
+	align-items: stretch;
+}
+
+.inputs {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+}
+
+.inputsPeople {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 18px 20px;
+	grid-template-areas: ". . . .";
+	justify-content: space-between;
+	align-items: start;
+	margin-bottom: 3rem;
+}

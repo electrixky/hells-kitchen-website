@@ -1,0 +1,38 @@
+.style {
+	padding-bottom: 2rem;
+	position: relative;
+}
+
+.arrowLeft {
+	position: absolute;
+	top: 50%;
+   transform: translate(0, -50%);
+	left: -4rem;
+	font-size: 10rem;
+	color: #ff7dff8f;
+	z-index: 3;
+	cursor: pointer;
+	user-select: none;
+	transition: all .2s ease-in;
+
+	&:hover {
+		color: #ffb7ff;
+	}
+}
+
+.arrowRight {
+	position: absolute;
+	top: 50%;
+   transform: translate(0, -50%);
+	right: -4rem;
+	font-size: 10rem;
+	color: #ff7dff8f;
+	z-index: 3;
+	cursor: pointer;
+	user-select: none;
+	transition: all .2s ease-in;
+
+	&:hover {
+		color: #ffb7ff;
+	}
+}

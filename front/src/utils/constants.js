@@ -1,0 +1,1 @@
+const neonColors = ['#FFFF00', '#E6FB04', '#FF0000', '#FF6600', '#00FF00', '#00FF66', '#00FFFF', '#099FFF', '#0033FF', '#FF00FF', '#FF0099', '#d400ff']

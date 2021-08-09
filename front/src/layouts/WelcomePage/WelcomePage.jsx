@@ -6,6 +6,9 @@ const WelcomePage = () => {
 	return <div className={styles.background} id='home'>
 		<Navigation />
 		<Logo />
+		<a className={styles.arrow} href="#menu" >
+			<i class="fa fa-chevron-down" aria-hidden="true"></i>
+		</a>
 	</div>
 }
 

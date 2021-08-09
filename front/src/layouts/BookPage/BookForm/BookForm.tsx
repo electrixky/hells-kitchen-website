@@ -1,7 +1,8 @@
+import React, {FC} from 'react'
 import styles from './BookForm.module.scss'
 import Heading from './Heading/Heading'
 import ButtonDate from './ButtonDate/ButtonDate'
-import Button from './Button/Button'
+import FormButton from './FormButton/FormButton'
 import Submission from './Submission/Submission'
 
 const BookForm = () => {
@@ -19,19 +20,19 @@ const BookForm = () => {
 
 		<Heading>Time</Heading>
 		<div className={styles.inputs}>
-			<Button value='18pm'/>
-			<Button value='19pm'/>
-			<Button value='20pm'/>
-			<Button value='21pm'/>
-			<Button value='22pm'/>
+			<FormButton value='18pm'/>
+			<FormButton value='19pm'/>
+			<FormButton value='20pm'/>
+			<FormButton value='21pm'/>
+			<FormButton value='22pm'/>
 		</div>
 
 		<Heading>People</Heading>
 		<div className={styles.inputsPeople}>
-			<Button value='1-2'/>
-			<Button value='3-4'/>
-			<Button value='5-6'/>
-			<Button value='>6'/>
+			<FormButton value='1-2'/>
+			<FormButton value='3-4'/>
+			<FormButton value='5-6'/>
+			<FormButton value='>6'/>
 		</div>
 
 		<Submission/>

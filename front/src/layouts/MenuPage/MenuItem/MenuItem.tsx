@@ -1,7 +1,14 @@
-import styles from './Item.module.scss'
+import React, {FC} from 'react'
+import styles from './MenuItem.module.scss'
 import AddButton from './AddButton/AddButton'
 
-const Item = ({name, desc, source}) => {
+interface IMenuItem {
+	name: string,
+	desc: string,
+	source: string
+}
+
+const MenuItem:FC<IMenuItem> = ({name, desc, source}) => {
 	return (
 			<div className = {styles.item}>
 					<img className={styles.image} src = {source} />
@@ -14,4 +21,4 @@ const Item = ({name, desc, source}) => {
 	)
 }
 
-export default Item
+export default MenuItem

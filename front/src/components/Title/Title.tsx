@@ -1,14 +1,11 @@
-//import styles from './Title.module.scss'
-import React, {FC} from "react"
+import styles from './Title.module.scss'
+import React from "react"
 
-const styles = require("./Title.module.scss")
-
-interface ITitle {
-	children: React.ReactChild | React.ReactNode,
+interface ITitleProps {
 	style: string
 }
 
-const Title: FC<ITitle> = ({ children, style }) => {
+const Title: React.FC<ITitleProps> = ({ children, style }) => {
 	return (
 	<h2 className={`${styles.title} ${styles[style]}`}>{children}</h2>
 	);

@@ -1,12 +1,12 @@
 import styles from './ButtonDate.module.scss'
-import React, {FC} from "react"
+import React from "react"
 
-interface IButtonDate {
+interface IButtonDateProps {
 	day: string,
 	date: string
 }
 
-const ButtonDate: FC<IButtonDate> = ({ day, date }) => {
+const ButtonDate: React.FC<IButtonDateProps> = ({ day, date }) => {
 	return <div className={styles.input}>
 		<div className={styles.cell}>{day}</div>
 		<div className={styles.cell}>{date}</div>

@@ -1,11 +1,11 @@
 import styles from './Heading.module.scss'
-import React, {FC} from 'react'
+import React from 'react'
 
-interface IHeading {
+interface IHeadingProps {
 	children: React.ReactChild | React.ReactNode,
 }
 
-const Heading: FC<IHeading> = ({children}) => {
+const Heading: React.FC<IHeadingProps> = ({children}) => {
 	return <p className = {styles.heading}>{children}</p>
 }
 

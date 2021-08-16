@@ -1,14 +1,14 @@
-import React, {FC} from 'react'
+import React from 'react'
 import styles from './ImageSlider.module.scss'
 import { useState } from 'react'
 import { SliderData } from './SliderData'
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io'
 
-interface IImageSlider {
-	slides: {image : string}[]
+interface IImageSliderProps {
+	slides: {[key:string]:string}
 }
 
-const ImageSlider: FC<IImageSlider> = ({slides}) => {
+const ImageSlider: React.FC<IImageSliderProps> = ({slides}) => {
 	const [current, setCurrent] = useState(0)
 	const length = slides.length
 	

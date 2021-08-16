@@ -9,13 +9,13 @@
 	align-items: stretch;
 }
 
-.inputs {
+.buttons {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 3rem;
 }
 
-.inputsPeople {
+.buttonsPeople {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 18px 20px;
@@ -23,4 +23,26 @@
 	justify-content: space-between;
 	align-items: start;
 	margin-bottom: 3rem;
+}
+
+.inputName {
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.label {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.input {
+	color: #fff;
+	border: 1px solid grey;
+	background-image:none;
+	background-color:transparent;
+	box-shadow: none;
+	padding: 0.9rem;
+	flex-grow: 0.5;
 }

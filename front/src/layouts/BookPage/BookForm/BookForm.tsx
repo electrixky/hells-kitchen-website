@@ -1,14 +1,22 @@
-import React, {FC} from 'react'
 import styles from './BookForm.module.scss'
 import Heading from './Heading/Heading'
 import ButtonDate from './ButtonDate/ButtonDate'
 import FormButton from './FormButton/FormButton'
-import Submission from './Submission/Submission'
+import Button from 'components/Button/Button'
+
+const bookingTime = ["18pm", "19pm", "20pm", "21pm", "22pm"]
+const bookingPeople = ["1-2", "3-4", "5-6", ">6"]
+const buttonsTime = bookingTime.map((time) => {
+	<FormButton key={time} value={time} />
+})
+const buttonsPeople = bookingPeople.map((people) => {
+	<FormButton key={people} value={people} />
+})
 
 const BookForm = () => {
 	return <div className={styles.form}>
 		<Heading>Date</Heading>
-		<div className={styles.inputs}>
+		<div className={styles.buttons}>
 			<ButtonDate day='Mo' date='16' />
 			<ButtonDate day='Tu' date='17' />
 			<ButtonDate day='We' date='18' />
@@ -19,23 +27,22 @@ const BookForm = () => {
 		</div>
 
 		<Heading>Time</Heading>
-		<div className={styles.inputs}>
-			<FormButton value='18pm'/>
-			<FormButton value='19pm'/>
-			<FormButton value='20pm'/>
-			<FormButton value='21pm'/>
-			<FormButton value='22pm'/>
+		<div className={styles.buttons}>
+			{buttonsTime}
 		</div>
 
 		<Heading>People</Heading>
-		<div className={styles.inputsPeople}>
-			<FormButton value='1-2'/>
-			<FormButton value='3-4'/>
-			<FormButton value='5-6'/>
-			<FormButton value='>6'/>
+		<div className={styles.buttonsPeople}>
+			{buttonsPeople}
 		</div>
 
-		<Submission/>
+		<div className={styles.inputName}>
+			<label htmlFor="name" className={styles.label}>Name
+				<input type="text" className={styles.input} placeholder='Your name' required />
+			</label>
+		</div>
+
+		<Button style='buttonBlue'>BOOK</Button>
 	</div>
 }
 

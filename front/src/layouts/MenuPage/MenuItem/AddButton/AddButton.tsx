@@ -1,14 +1,9 @@
 import styles from './AddButton.module.scss'
-import React, {FC} from 'react'
 
-interface IAddButton {
-	class: string
-}
-
-const AddButton: FC<IAddButton> = () => {
+const AddButton = () => {
 	return (
 		<a className = {styles.button}>
-			<i class='fas fa-plus'></i>
+			<i className ='fas fa-plus'></i>
 		</a>
 	)
 }

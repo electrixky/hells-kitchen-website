@@ -1,12 +1,12 @@
 import styles from './FormButton.module.scss'
-import React, {FC} from "react"
+import React from "react"
 
-interface IButton {
+interface IFormButtonProps {
 	value: string
 }
 
-const FormButton: FC<IButton> = ({value}) => {
-	return <div className={styles.input}>{value}</div>
+const FormButton: React.FC<IFormButtonProps> = ({value}) => {
+	return <button className={styles.btn}>{value}</button>
 }
 
 export default FormButton

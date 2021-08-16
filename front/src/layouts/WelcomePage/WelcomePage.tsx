@@ -1,13 +1,13 @@
 import styles from './WelcomePage.module.scss'
-import Logo from './Logo/Logo'
+import WelcomeImage from './WelcomeImage/WelcomeImage'
 import Navigation from './Navigation/Navigation'
 
 const WelcomePage = () => {
 	return <div className={styles.background} id='home'>
 		<Navigation />
-		<Logo />
+		<WelcomeImage />
 		<a className={styles.arrow} href="#menu" >
-			<i class="fa fa-chevron-down" aria-hidden="true"></i>
+			<i className="fa fa-chevron-down" aria-hidden="true"></i>
 		</a>
 	</div>
 }

@@ -1,4 +1,3 @@
-import styles from './App.module.scss'
 import wrapper from './styles/common.module.scss'
 import WelcomePage from './layouts/WelcomePage/WelcomePage'
 import MenuPage from './layouts/MenuPage/MenuPage'

@@ -1,11 +1,11 @@
 import styles from './Menu.module.scss'
 import Tabs from '../Tabs/Tabs'
-import Items from '../Items/Items'
+import MenuItems from '../MenuItems/MenuItems'
 
 const Menu = () => {
 	return <div className = {styles.border}>
 		<Tabs/>
-		<Items/>
+		<MenuItems/>
 	</div>
 }
 

@@ -1,4 +1,4 @@
-export const SliderData = [
+export const SliderData: {image : string}[] = [
 	{
 		image: 'https://cdn-b.william-reed.com/var/wrbm_gb_hospitality/storage/images/9/1/8/0/410819-1-eng-GB/The-MA-pub-quiz_wrbm_large.jpg'
 	},

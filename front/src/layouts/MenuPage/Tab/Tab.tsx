@@ -1,6 +1,11 @@
+import React from 'react'
 import styles from './Tab.module.scss'
 
-const Tab = ({children, onClick}) => {
+interface ITabProps {
+	onClick?: () => void
+} 
+
+const Tab: React.FC<ITabProps> = ({children, onClick}) => {
 	return <button onClick={onClick} className={styles.tab}>{children}</button>
 }
 
